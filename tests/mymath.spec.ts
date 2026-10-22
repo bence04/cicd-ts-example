@@ -2,7 +2,7 @@ import { test, expect } from "@playwright/test";
 import { addNumbers } from "../src/mymath";
 
 test("pozitív számok összeadása", () => {
-  expect(addNumbers(1, 2)).toBe(4);
+  expect(addNumbers(1, 2)).toBe(3);
 });
 
 test("nulla hozzáadása", () => {
