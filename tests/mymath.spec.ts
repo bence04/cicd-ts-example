@@ -16,6 +16,5 @@ test("negatív szám hozzáadása", () => {
 test("szöveg esetén TypeError-t dob", () => {
   // A TypeScript fordító ezt eleve hibának jelezné, a @ts-expect-error
   // kikapcsolja ezt az egy sort, hogy futás közben is ellenőrizhessük.
-  // @ts-expect-error
   expect(() => addNumbers(4, "I DO NOT BELONG HERE")).toThrow(TypeError);
 });
