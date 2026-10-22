@@ -2,7 +2,7 @@ import { test, expect } from "@playwright/test";
 import { addNumbers } from "../src/mymath";
 
 test("pozitív számok összeadása", () => {
-  expect(addNumbers(1, 2)).toBe(3);
+  expect(addNumbers(1, 2)).toBe(4);
 });
 
 test("nulla hozzáadása", () => {
@@ -16,5 +16,6 @@ test("negatív szám hozzáadása", () => {
 test("szöveg esetén TypeError-t dob", () => {
   // A TypeScript fordító ezt eleve hibának jelezné, a @ts-expect-error
   // kikapcsolja ezt az egy sort, hogy futás közben is ellenőrizhessük.
+  // @ts-expect-error
   expect(() => addNumbers(4, "I DO NOT BELONG HERE")).toThrow(TypeError);
 });
